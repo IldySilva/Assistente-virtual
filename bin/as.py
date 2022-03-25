@@ -12,10 +12,13 @@ GPIO.setmode(GPIO.BCM)
 
 # Set LED pin as output
 GPIO.setup(led_pin, GPIO.OUT)
-
-# Blink forever
+#  Set LED pin as output
 while True:
-    GPIO.output(led_pin, GPIO.HIGH) # Turn LED on
-    time.sleep(1)                   # Delay for 1 second
-    GPIO.output(led_pin, GPIO.LOW)  # Turn LED off
-    time.sleep(1)                   # Delay for 1 second
+        GPIO.output(led_pin, GPIO.HIGH) # Turn LED on
+        print("aceso")
+        time.sleep(1)
+                         # Delay for 1 second
+        GPIO.output(led_pin, GPIO.LOW)  # Turn LED off
+        print("apagado")
+        time.sleep(1)    
+                       
