@@ -10,7 +10,6 @@ def takeCommand():
             r.adjust_for_ambient_noise(source)
             print("Ouvindo...")
             audio = r.listen(source)
-
         try :
             print("Reconhecendo,Aguarde...")
             query = r.recognize_google(audio, language = 'pt-pt')

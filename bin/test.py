@@ -1,7 +1,3 @@
-import Runner as runner 
-from Recognizer import takeCommand
-
-
 from tkinter import *
 from PIL import ImageTk, Image
 
@@ -25,18 +21,3 @@ label.pack()
 lbl=Label(win,text="Hello")
 win.attributes('-fullscreen', True)
 win.mainloop()
-while True:
-    try:
-        reconhecido=  takeCommand()
-        if reconhecido !=None:
-            runner.Runner(reconhecido)
-
-    except Exception as e:
-         print(e)     
-                        
-
-
-
-            
-  
-  
